@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
@@ -9,26 +10,23 @@ import './App.css';
 
 function App() {
   return (
+
     <Router>
       <Navbar />
-        <Routes>
-          <div >
-           
-          <Route path='/'>
-            <Login />
-          </Route>
-          
-          <Route path='/Login'>
-            <Login />
-          </Route>
+        <div >
+          <Routes>
+            <Route path='/' element={<Home/>}/>
 
-          <Route path='/home'>
-            <Home />
-          </Route>
+            <Route path='/login' element={<Login/>}/>
+
+            <Route path='/home' element={<Home/>}/>
+
+            <Route path='/cadastrousuario' element={<CadastroUsuario/>}/>
+          </Routes>
         </div>
-      </Routes>
-    <Footer />
-  </Router>
+      <Footer />
+    </Router>
+
   );
 }
 
