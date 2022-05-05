@@ -1,8 +1,9 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Box, Button, Grid, TextField, Typography } from '@material-ui/core'
-import User from '../../models/User';
-import { cadastroUsuario } from '../../service/Service';
 import { Link, useNavigate } from 'react-router-dom';
+import User from '../../models/User';
+import { cadastroUsuario } from '../../services/Service';
+import './CadastroUsuario.css';
 
 function CadastroUsuario() {
 
@@ -77,7 +78,7 @@ function CadastroUsuario() {
     */
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid  className='background-cadastro'container direction='row' justifyContent='center' alignItems='center'>
             <Grid item xs={6} className='imagem2'></Grid>
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>
