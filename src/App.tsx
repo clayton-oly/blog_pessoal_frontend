@@ -10,7 +10,7 @@ import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import ListaTema from './components/temas/listatema/ListaTema';
 import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
-import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+import DeletarPostagem from './components/postagens/deletarPostagem/deletarPostagem';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify';
